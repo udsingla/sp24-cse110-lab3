@@ -1,1 +1,13 @@
 Fill in the passphrases here.
+1) <!-- Passcode for question 1: greenEggsAndHam -->
+2) <title data-question2="iHateCplusplus">Scavenger Hunt</title>
+3) <p hidden> Passcode for question 3: HTMLRocks</p>
+4) <question-four style="display:none">Passcode: JavaScriptRules</question-four>
+5) <span style="opacity: 0;">Question 5 Passcode: SvelteBeatsReact</span>
+6) // Question 6 Passcode: ThisIsJS
+7) console.log('Question 7 Passcode: YouFoundMe');
+8) /* Question 8 passcode: coolcoolcool */
+9) <h2>Question 9 passcode: 2020sucked</h2>
+10) Question 10 Passcode: listenToTheBlackKeys
+11) <meta name="question11" content="a11yComesFirst">
+12) <div data-question12passcode="iLoveWebDev"></div>
