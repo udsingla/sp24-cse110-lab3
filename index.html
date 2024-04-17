@@ -14,9 +14,15 @@
         <h2>Team 2</h2>
         <h4> Time: 4/13/24 5:30-6:50 At the Lodge </h4>
     </header>
-    <nav>
-
-    </nav>
+    <nav class="menu">
+        <ul>
+          <li><a href="#Attendance">Attendance</a></li>
+          <li><a href="#Team Bonding Activities">Team Bonding Activities</a></li>
+          <li><a href="#Discussion Regarding Team Branding:">Team Branding</a></li>
+          <li><a href="#Team Images and Videos">Team Images and Videos</a></li>
+          <li><a href="#forms">Forms</a></li>
+        </ul>
+      </nav>
     
 
     <main>
@@ -28,15 +34,15 @@
         <span>It was a good start off meeting to get comfortable with everyone.</span>
     </main>
 
-    <section>
+    <section id="Attendance">
         <h2>Attendance:</h2>
         <p>
             All Members were in attendance.
         </p>
         <hr>
     </section>
-    <section>
-        <h2> Team Bonding Activities: </h2>
+    <section id="Team Bonding Activities">
+        <h2>Team Bonding Activities:</h2>
         <ul>
             <li>Played Scribble.io</li>
             <li>Made Group Picture</li>
@@ -45,7 +51,7 @@
         </ul>
         <hr>
     </section>
-    <section>
+    <section id="Discussion Regarding Team Branding">
         <h2>Discussion Regarding Team Branding:</h2>
         <h3>Topic: </h3>
         <p>The idea of <i>team branding</i> is to create an <strong>identity</strong> for your team and assosciate it with values and ideas.</p>
@@ -58,10 +64,16 @@
 
 
     </section>
-    <section>
+    <section id="Team Images and Videos">
         <h2>Team Images and videos </h2>
         <h4>Group Photo:</h4>
-        <img src="./IMG_8537.jpeg" alt="group_photo" class="inline">
+        <img src="./IMG_8537.jpeg" alt="group_photo" class="inline" height="200" width="350">
+        <h4>Group video intro:</h4>
+        <video controls width="350" height="200"> <source src="./video.mp4" type="video/mp4"></video>
+        <h4>audio:</h4>
+        <audio controls src="./CSE 110 audio.mp3"></audio>
+        <h3>Conclusions:</h3>
+        <em><strong>We Like To Move It Move It!</strong></em>
         <details>
             <summary> Reminders </summary>
             <ul>
@@ -69,10 +81,48 @@
                 <li> Send clips for the team introduction video</li>
             </ul>
         </details>
+        <hr>
     </section>
 
-    <footer>
+    <section id="forms">
+        <form>
+            <fieldset>
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name">
 
+            <p>Classes Completed:</p>
+            <input type="checkbox" id="class1">
+            <label for="class1">CSE 8A</label>
+            <input type="checkbox" id="class2">
+            <label for="class2">CSE 130</label>
+
+            <p>Year of education:</p>
+            <input type="radio" id="first" name="year">
+            <label for="first">Freshman</label><br>
+            <input type="radio" id="second" name="year">
+            <label for="second">Sophomore</label><br>  
+            <input type="radio" id="third" name="year">
+            <label for="third">Junior</label><br>
+            <input type="radio" id="fourth" name="year">
+            <label for="fourth">Senior</label><br>
+            
+            <select>
+                <option value="">choose your pet</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+              </select>
+              <br>
+
+              <button>Click Me!</button>
+              <br>
+              <input type="date" id="date" value="2024-04-16" min="2024-01-01" max="2024-12-31">
+            
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <h6>Made by Uday</h6>
     </footer>
 </body>
 </html>
