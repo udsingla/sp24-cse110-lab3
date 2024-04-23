@@ -1,0 +1,59 @@
+
+:root {
+    --main-bg-color: yellow;
+}
+
+
+/* Make the class important custom orange*/
+.important{
+    color: color(display-p3 1 0.5 0);
+    text-align: center;
+    background-color: var(--main-bg-color, aqua);
+    width: 85q;
+    border-radius: 1em;
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+    margin: 5px 5px 5px 5px;
+
+}
+
+h2,h3{
+    border: 2px red dotted;
+    max-width: 17em;
+    max-height: 45px;
+}
+
+/* Make the id time 1 to custom green*/
+#time1{
+    color: hsl(107, 100%, 30%);
+    font-size: 1.2rem;
+    width: 45vw;
+    height:50px;
+    text-decoration: underline dashed red;
+}
+
+
+/* All internal links color to be set to this mix of colors */
+a[href^="#"]{
+    color: color-mix(in lch, blue, aqua);
+    font-size: 0.9em;
+}
+
+/* make all other text balck*/
+*{
+    color: rgb(0, 0, 0);
+    margin-top:  1mm;
+    margin-bottom: 1mm;
+    margin-left: 1mm;
+    margin-right: 1mm;
+}
+
+
+button:hover {
+    color: red;
+}
+
+button:active{
+    background-color: black;
+}
