@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Snikers";
+    src: url("./Snikers.ttf");
+  }
+
+:root {
+    --main-bg-color: yellow;
+}
+
+
+/* Make the class important custom orange*/
+.important{
+    color: color(display-p3 1 0.5 0);
+    text-align: center;
+    background-color: var(--main-bg-color, aqua);
+    width: 85q;
+    border-radius: 1em;
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    
+}
+
+h2,h3{
+    border: 2px red dotted;
+    max-width: 17em;
+    max-height: 45px;
+    padding-top: 2px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+
+/* Make the id time 1 to custom green*/
+#time1{
+    color: hsl(107, 100%, 30%);
+    font-size: 1.2rem;
+    width: 45vw;
+    height:50px;
+    text-decoration: underline dashed red;
+    margin:auto;
+}
+
+
+/* All internal links color to be set to this mix of colors */
+a[href^="#"]{
+    color: color-mix(in lch, blue, aqua);
+    font-size: 0.9em;
+    
+}
+
+/* make all other text balck*/
+*{
+    color: rgb(0, 0, 0);
+    margin-top:  1mm;
+    margin-bottom: 1mm;
+    margin-left: 1mm;
+    margin-right: 1mm;
+}
+
+.header{
+    position: relative;
+    top: 10px; left: 5px;
+}
+
+button{
+    position: absolute;
+    top: 2040px;
+    &:hover{
+        color: red;
+    }
+    &:active{
+        background-color: black;
+    }
+}
+
+/* button:hover {
+    color: red;
+}
+
+button:active{
+    background-color: black;
+} */
+
+.identity{
+    display: block;
+}
+
+.team{
+    display: inline;
+}
+
+.activities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid1{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+  gap: 1px;
+  background-color: #90979d;
+  padding: 1px;
+}
+
+.grid1 > li{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 2px;
+  }
+
+  @media (max-width: 768px) {
+    .header{
+        padding: 7px;
+        background-color: antiquewhite;
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+  }
+  @media (max-width: 480px) {
+    .header{
+        padding: 5px;
+        background-color: bisque;
+    }
+    .header h1 {
+        font-size: 10px;
+    }
+  }
+
+  div p{
+    font-family: "Snikers", serif;
+  }
+
+  div > p{
+    color:red
+  }
+
+  div ~ span{
+    color:blueviolet;
+  }
+
+  h3 + p{
+    color: green;
+  }
+
+  li.activities{
+    color: blue;
+  }
+
+  h2:has(+ p){
+    color:orangered;
+  }
